@@ -5,14 +5,14 @@ html {
 
 h1 {
   color: #fff;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Dancing Script', Helvetica, sans-serif;
   font-size: 250%;
 }
 
 h2, h3 {
   color: #fff;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: lighter;
+  font-family: 'Dancing Script';;
+  font-weight: bolder;
 }
 
 body {
