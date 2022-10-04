@@ -1,4 +1,7 @@
-/* Application-wide Styles */
+html {
+  padding:0;
+  margin:0;
+}
 
 h1 {
   color: #fff;
@@ -14,9 +17,8 @@ h2, h3 {
 
 body {
   background: rgb(14 165 233);
-  overflow-x: hidden;
-  padding-left:1rem;
-  padding-right:1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 body, input[type="text"], button {
@@ -46,9 +48,4 @@ button:disabled {
   background-color: #eee;
   color: #aaa;
   cursor: auto;
-}
-
-/* everywhere else */
-* {
-  font-family: Arial, Helvetica, sans-serif;
 }

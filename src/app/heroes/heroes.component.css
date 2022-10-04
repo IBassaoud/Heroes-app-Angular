@@ -3,6 +3,10 @@
 /* Styles and style sheets identified in @Component metadata are scoped to that specific component. 
 The heroes.component.css styles apply only to the HeroesComponent and don't affect the outer HTML or the HTML in any other component. */
 
+:host {
+ color:#fff;
+}
+
 .heroes {
   margin: 0 0 1em 0;
   list-style-type: none;
@@ -12,9 +16,10 @@ The heroes.component.css styles apply only to the HeroesComponent and don't affe
 
 .heroes li {
   display: flex;
+  width: 15em;
 }
 
-.heroes a {
+.heroes .item_hero {
   text-decoration: none;
   color: #2c3a41;
   flex: 1;
@@ -30,30 +35,15 @@ The heroes.component.css styles apply only to the HeroesComponent and don't affe
   height: 1.8em;
 }
 
-.heroes a:hover {
+.heroes .item_hero:hover {
   color: #2c3a41;
   background-color: #e6e6e6;
   left: .1em;
 }
 
-.heroes a:active {
+.heroes .item_hero:active {
   background-color: #525252;
   color: #fafafa;
-}
-
-.heroes a.selected {
-  background-color: rgb(239 68 68);
-  color: white;
-}
-
-.heroes a.selected:hover {
-  background-color: rgb(220 38 38);
-  color: white;
-}
-
-.heroes a.selected:active {
-  background-color: rgb(153 27 27);
-  color: white;
 }
 
 .heroes .badge {
@@ -69,4 +59,47 @@ The heroes.component.css styles apply only to the HeroesComponent and don't affe
 
 .heroes .name {
   align-self: center;
+}
+
+.delete {
+  text-decoration: none;
+  color: rgb(75 85 99);
+  cursor: pointer;
+  padding: 0.5rem 0;
+  height: 1.5em;
+  width: 1.5em;
+}
+
+.delete:hover {
+  color: red;
+  transform: scale(1.2);
+}
+
+.add-button {
+  margin-left: 0.5em;
+  border: solid 2px transparent;
+  font-size: 1rem;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.add-button:hover {
+  color: #fff;
+  background: rgb(148 163 184);
+}
+
+input {
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: 2px solid transparent;
+  font-size: 1rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+input:focus {
+  outline: none !important;
+  border: 2px solid greenyellow;
+  box-shadow: 0 0 10px #719ECE;
 }

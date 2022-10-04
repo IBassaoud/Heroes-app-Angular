@@ -1,0 +1,68 @@
+/* HeroSearch private styles */
+
+:host {
+    color: #fff;
+    font-family: 'Dancing Script';
+}
+
+#search-component {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+}
+
+input {
+    padding: .5rem;
+    width: 400px;
+    border-radius: 0.25rem;
+    border: 2px solid #fff;
+    font-size: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+input:focus, input:not([value=""]) {
+    outline: none !important;
+    border: 2px solid greenyellow;
+    box-shadow: 0 0 10px #719ECE;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+.search-result li a {
+    border: 2px solid #fff;
+    font-size: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: inline-block;
+    width: 420px;
+    padding: .5rem;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: black;
+    background-color: #fff;
+}
+
+.search-result li a:hover {
+    background-color: rgb(150, 249, 0);
+    color: #fff;
+    border: 2px solid rgb(150, 249, 0);
+
+}
+
+ul.search-result {
+    margin-top: 0;
+    padding-left: 0;
+}

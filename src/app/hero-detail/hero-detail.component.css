@@ -1,43 +1,59 @@
 :host {
-    color: #fff;
+  color: #fff;
 }
 
 /* HeroDetailComponent's private CSS styles */
 
 h2 {
-    font-family: 'Dancing Script';
-    font-size: 22px;
-    font-weight: 800;
-    width: fit-content;
-    border-bottom: 3px solid greenyellow;
+  font-family: 'Dancing Script';
+  font-size: 26px;
+  font-weight: bolder;
+  width: fit-content;
+  border-bottom: 3px solid greenyellow;
 }
-  input {
-    font-size: 1em;
-    padding: 0.75rem;
-    border-radius: 0.25rem;
-    border-style: solid;
-    border-width: 0.15rem;
-    font-size: 1rem;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    border-color: rgb(107 114 128);
-  }
 
-  input:focus {
-    outline: none !important;
-    border: 2px solid greenyellow;
-    box-shadow: 0 0 10px #719ECE;
-  }
-  
-  button {
-    color: #333;
-    background-color: #eee;
-    margin-bottom: 12px;
-    padding: 1rem;
-    border-radius: 4px;
-    font-size: 1rem;
-  }
-  
-  button:hover {
-    color: white;
-    background-color: #42545C;
-  }
+input {
+  padding: .5rem;
+  border-radius: 0.25rem;
+  border: 2px solid #fff ;
+  font-size: 1rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+input:focus {
+  outline: none !important;
+  border: 2px solid greenyellow;
+  box-shadow: 0 0 10px #719ECE;
+}
+
+.btn_back {
+  color: #333;
+  background-color: #eee;
+  margin-bottom: 12px;  
+  border-radius: 4px;
+  font-size: 1rem;
+  padding-left: 0.875em;
+  padding-right: 0.875em;
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
+}
+
+.btn_back:hover {
+  color: white;
+  background-color: rgba(0, 98, 255, 0.745);
+}
+
+.btn_save {
+  font-size: 1rem;
+  margin-left: 0.5rem;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  border: solid 2px transparent;
+}
+
+.btn_save:hover {
+  color: #fff;
+  background: rgb(8, 232, 8);
+}

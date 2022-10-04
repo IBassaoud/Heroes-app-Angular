@@ -24,18 +24,19 @@ h2 {
 }
 
 a {
-  background-color: rgb(75 85 99);
+  background-color: #fff;
   border-radius: 2px;
   padding: 1rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
   text-decoration: none;
   display: inline-block;
-  color: #fff;
+  color: rgb(31 41 55);
   text-align: center;
   width: 100%;
   min-width: 70px;
   margin: .5rem auto;
   box-sizing: border-box;
+  border-radius: 0.5rem;
 
   /* flexbox */
   order: 0;
@@ -51,5 +52,6 @@ a {
 }
 
 a:hover {
-  background-color: rgb(31 41 55);
+  background-color: rgb(150, 249, 0);
+  color:#fff;
 }
