@@ -1,0 +1,43 @@
+:host {
+    color: #fff;
+}
+
+/* HeroDetailComponent's private CSS styles */
+
+h2 {
+    font-family: 'Dancing Script';
+    font-size: 22px;
+    font-weight: 800;
+    width: fit-content;
+    border-bottom: 3px solid greenyellow;
+}
+  input {
+    font-size: 1em;
+    padding: 0.75rem;
+    border-radius: 0.25rem;
+    border-style: solid;
+    border-width: 0.15rem;
+    font-size: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-color: rgb(107 114 128);
+  }
+
+  input:focus {
+    outline: none !important;
+    border: 2px solid greenyellow;
+    box-shadow: 0 0 10px #719ECE;
+  }
+  
+  button {
+    color: #333;
+    background-color: #eee;
+    margin-bottom: 12px;
+    padding: 1rem;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  button:hover {
+    color: white;
+    background-color: #42545C;
+  }

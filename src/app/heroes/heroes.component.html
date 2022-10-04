@@ -1,0 +1,43 @@
+<h2>My Heroes</h2>
+<!-- The word uppercase in the interpolation binding after the pipe | character, activates the built-in UppercasePipe. -->
+<!-- Pipes https://angular.io/guide/pipes are a good way to format strings, currency amounts, dates, and other display data. Angular ships with several built-in pipes and you can create your own. -->
+
+<ul class='heroes'>
+    <li *ngFor="let hero of heroes">
+        <!-- The *ngFor is Angular's repeater directive. It repeats the host element for each element in a list. -->
+        <!-- The parentheses around click tell Angular to listen for the <button> element's click event. When the user clicks in the <button>, Angular executes the onSelect(hero) expression. -->
+        <a routerLink="/detail/{{hero.id}}">
+            <span class="badge">{{ hero.id }}</span>
+            <span class="name"> {{ hero.name }}</span>
+        </a>
+    </li>
+</ul>
+
+
+
+<!-- <app-hero-detail [hero]="selectedHero"></app-hero-detail> -->
+
+<!-- *ngIf directive wraps the hero details.
+This directive tells Angular to render the section only when the selectedHero is defined after it has been selected by clicking on a hero. -->
+<!-- <div *ngIf="selectedHero">
+    <h2>{{selectedHero.name | uppercase}} Details</h2>
+    <div>ID: {{selectedHero.id}}</div>
+    <div>
+        <label for="hero-name">Hero name: </label>
+        <input id="hero-name" [(ngModel)]="selectedHero.name" placeholder="name">
+    </div>
+</div> -->
+
+<!-- <div>
+    <span>id : </span> {{ hero.id }}
+</div>
+<div>
+    <span>name : </span> {{ hero.name }}
+</div> -->
+
+<!-- <div> -->
+<!-- [(ngModel)] is Angular's two-way data binding syntax.
+    Here it binds the hero.name property to the HTML text box so that data can flow in both directions. Data can flow from the hero.name property to the text box and from the text box back to the hero.name. -->
+<!-- <label for="name">Hero name: </label>
+    <input id="name" [(ngModel)]="hero.name" placeholder="name"> -->
+<!-- </div> -->

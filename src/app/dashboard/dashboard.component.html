@@ -1,0 +1,15 @@
+<!-- 
+  The template presents a grid of hero name links.
+
+  The *ngFor repeater creates as many links as are in the component's heroes array.
+  The links are styled as colored blocks by the dashboard.component.css.
+  The links don't go anywhere yet.
+ -->
+
+<h2>Top Heroes</h2>
+<div class="heroes-menu">
+  <a *ngFor="let hero of heroes"
+  routerLink="/detail/{{hero.id}}">
+  {{hero.name}}
+</a>
+</div>

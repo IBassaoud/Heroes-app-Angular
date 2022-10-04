@@ -1,0 +1,26 @@
+/* MessagesComponent's private CSS styles */
+:host {
+  color: #fff;
+}
+
+h2 {
+  font-family: 'Dancing Script';
+  font-size: 22px;
+  font-weight: 800;
+  width: fit-content;
+  border-bottom: 3px solid greenyellow;
+}
+
+.clear {
+  color: #333;
+  background-color: #eee;
+  margin-bottom: 12px;
+  padding: 1rem;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.clear:hover {
+  color: white;
+  background-color: #42545C;
+}

@@ -1,0 +1,27 @@
+<!-- The double curly braces are Angular's interpolation binding syntax. This interpolation binding presents the component's title property value inside the HTML header tag. -->
+<div class="typewriter">
+
+    <h1>{{title}}</h1>
+</div>
+
+<header>
+    <nav>
+        <a routerLink="/">Home</a>
+        <a routerLink="/heroes">Heroes</a>
+        <a routerLink="/dashboard">Dashboard</a>
+        <div id="indicator"></div>
+    </nav>
+</header>
+
+<router-outlet></router-outlet>
+<app-messages></app-messages>
+<!-- 
+- The AppComponent template no longer needs <app-heroes> because the application only displays the HeroesComponent when the user navigates to it.
+- The <router-outlet> tells the router where to display routed views. 
+
+- The RouterOutlet is one of the router directives that became available to the AppComponent
+because AppModule imports AppRoutingModule which exported RouterModule. 
+The ng generate command you ran at the start of this tutorial added this import because of the --module=app flag.
+If you didn't use the ng generate command to create app-routing.module.ts, import AppRoutingModule into app.module.ts 
+and add it to the imports array of the NgModule.  
+-->
